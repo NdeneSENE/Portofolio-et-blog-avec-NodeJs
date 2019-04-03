@@ -1,0 +1,23 @@
+<%- include("partials/header") -%>
+<h1>CONTACT</h1>
+<p><%= ContactContent %></p>
+
+<form action="/contact" method="post">
+  <div class="form-group">
+    <label for="exampleInputEmail1">Nom & Prenom</label>
+    <input type="text" class="form-control" name="nom" placeholder="Nom & Prenom" required>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" name="email" aria-describedby="emailHelp" placeholder="Enter email" required>
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  <div class="form-group">
+    <label>Objet</label>
+    <textarea name="objet" class="form-control" cols="30" rows="5" required></textarea> 
+ </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+
+<%- include("partials/footer") -%>
